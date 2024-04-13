@@ -1,9 +1,9 @@
+/*CSS FILE*/
+
 .logo-container .logo {
 	max-height: 80px;
-	/* or any other height you prefer */
 	width: auto;
-	/* This will keep the aspect ratio of the image */
-	/* Additional styling as needed */
+
 }
 
 body,
@@ -32,7 +32,8 @@ html {
 
 /*PAGE FISRT MESSAGE */
 .main-content h1 {
-	margin-top: 700px;
+	text-align: center;
+	margin-top: 800px;
 	font-size: 50px;
 	color: #ffffff;
 	text-shadow:
@@ -46,6 +47,9 @@ html {
 	letter-spacing: 0.1em;
 }
 
+.home-section h1{
+	margin-top: 40px;
+}
 
 .home-section {
 	display: flex;
@@ -105,20 +109,20 @@ html {
 
 /*ELEMTNS WHERE YOU SELECT THE THING ON MAIN PAGE */
 .features {
-	margin-left: 200px;
-	margin-right: 200px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 1em;
-	padding: 2em;
-
+    margin-left: auto; 
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1em;
+    padding: 2em;
+   
 }
 
 .feature {
-	background-color: #ffe8d6;
-	padding: 1em;
-	border-radius: 8px;
-	text-align: center;
+    background-color: #ffe8d6;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .feature h2 {
@@ -266,7 +270,7 @@ html {
 
 .title-books h1 {
 
-	margin-top: 20px;
+	margin-top: 40px;
 	font-size: 50px;
 	color: #ffffff;
 	text-shadow:
@@ -383,6 +387,19 @@ html {
 /* BOOK COVER */
 /* BOOK COVER */
 /* BOOK COVER */
+
+.book-cover-index {
+    height: 150px; 
+    width: 100%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #eee; 
+}
+
+
+
 .book-cover {
 	height: 150px;
 	width: 100%;
@@ -454,10 +471,11 @@ html {
 /* CAFETERIA */
 
 .container-cafeteria {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+    padding-top: 0px; /* Adjust as necessary */
 }
 
 .full-width-section-cafeteria {
@@ -471,7 +489,7 @@ html {
 
 
 .full-width-section-cafeteria h1 {
-	margin-top: 300px;
+	margin-top: 100px;
 	text-align: center;
 	text-shadow:
 		-1px -1px 0 #000,
@@ -537,6 +555,24 @@ html {
 	font-size: 30px;
 }
 
+.menu {
+	background-color: #f2f2f2;
+	font-size: 35px; 
+	padding: 20px; 
+	border-radius: 10px;
+	margin-top: 40px; 
+	margin-bottom: 50px ;
+
+}
+
+
+.menu-list {
+	list-style-type: none;
+	padding: 0;
+	text-align: center; 
+	font-size: 30px;
+}
+
 .menu-section {
 	background-color: #f5f5f5;
 	/* Light grey background */
@@ -555,10 +591,6 @@ html {
 	margin-bottom: 1em;
 }
 
-.menu-list {
-	list-style-type: none;
-	padding: 0;
-}
 
 .menu-item {
 	background-color: #ffffff;
@@ -797,6 +829,43 @@ button:hover {
 /* HISTORY */
 /* HISTORY */
 /* HISTORY */
+.title-history h1 {
+	margin-top: 50px;
+	font-size: 50px;
+	color: #ffffff;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.container-history {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+    padding-top: 0px; /* Adjust as necessary */
+}
+
+
+.full-width-section-history {
+	opacity: 90%;
+	width: 70%;
+	min-height: 100vh;
+	background-color: rgba(88, 87, 84, 0.9);
+	margin: 0;
+	padding: 20px;
+}
 
 .history-content {
 
@@ -858,25 +927,7 @@ button:hover {
 }
 
 
-.title-history h1 {
-	margin-top: 1200px;
-	font-size: 50px;
-	color: #ffffff;
-	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-	margin-bottom: 0.5em;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 
-}
 
 /*ADMIN */
 /*ADMIN */
@@ -997,6 +1048,21 @@ input[type="password-admin"] {
 /* PARKING */
 /* PARKING */
 
+.book-cover {
+	height: 300px;
+	width: 600px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+}
+
+.book-cover img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+}
 
 .image-banner img {
 	width: 100%;
@@ -1033,18 +1099,30 @@ input[type="password-admin"] {
 }
 
 .level-title {
-	font-size: 30px;
-	color: #333;
-	font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+    background-color: #dd9f78;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: -20px;
+    margin-right:-20px ;
 }
 
 
-.label-colors {
-	font-size: 24px;
-	color: #333;
-	margin-bottom: -15px;
-	margin-left: -11px;
+.label-colors{
+    font-size: 30px;
+    color: #333;
+    margin-bottom: -15px;
+    margin-left: -11px;
+    font-weight: bold;
 }
+
 
 
 .spaces {
@@ -1076,7 +1154,7 @@ input[type="password-admin"] {
 
 .total-spaces,
 .available-spaces {
-	font-size: 25px;
+	font-size: 35px;
 	margin-top: 20px;
 	font-weight: bold;
 }
@@ -1241,7 +1319,7 @@ input[type="password-admin"] {
 
 .title-aboutus h1 {
 
-	margin-top: 200px;
+	margin-top: 50px;
 	font-size: 50px;
 	color: #ffffff;
 	text-shadow:

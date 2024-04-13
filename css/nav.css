@@ -15,16 +15,19 @@
 
 .main-nav .nav-list li a {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 22px;
     text-decoration: none;
     color: #333;
-    padding: 20px;
+    padding: 15px;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 15px; 
+
 }
 
 .main-nav .nav-list li a:hover {
     background-color: #333;
     color: white;
+    border-radius: 15px;
 }
 
 
@@ -38,3 +41,83 @@
     text-decoration: none;
     color: inherit;
 }
+
+
+
+/* General Responsive Adjustments */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .main-nav .nav-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-nav .nav-list li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-nav .nav-list li a {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .page-header {
+        flex-direction: column;
+    }
+
+    .logo-container .logo {
+        margin-bottom: 10px;
+    }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 400px) {
+
+    .features {
+        grid-template-columns: 1fr; /* Stacks the features on small screens */
+    }
+
+    .main-content h1, .hero {
+        font-size: 24px;
+    }
+
+    .feature .button {
+        font-size: 1em; /* Smaller buttons on small screens */
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}
+
+/* Adjust footer and button sizes on very small screens */
+@media (max-width: 360px) {
+
+    .button-footer {
+        padding: 8px 24px;
+    }
+
+    .footer h2 {
+        font-size: 16px;
+    }
+}
+
+
+
+
