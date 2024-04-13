@@ -1,0 +1,40 @@
+/*NAV BAR*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+.main-nav .nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+}
+
+.main-nav .nav-list li a {
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: #333;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav .nav-list li a:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+.logo-container {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.logo {
+    text-decoration: none;
+    color: inherit;
+}

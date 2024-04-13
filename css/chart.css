@@ -1,0 +1,18 @@
+/** chart */
+
+.chart-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.chart-box {
+	width: 48%;
+	/* Slightly less than half to fit margins/padding */
+	margin: 1%;
+}
+
+canvas {
+	width: 100% !important;
+	height: auto !important;
+}
