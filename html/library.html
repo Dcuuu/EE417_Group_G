@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Library | Campus Portal</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/nav.css">
+	<link rel="stylesheet" href="stylesheets/background.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="background-library">
+	<header class="page-header">
+		<div class="logo-container">
+			<a href="index.html">
+				<img src="images/logo1.jpg" alt="Campus Logo" class="logo">
+			</a>
+		</div>
+		<nav class="main-nav">
+			<ul class="nav-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="library.html">Library</a></li>
+				<li><a href="cafeteria.html">Cafeteria</a></li>
+				<li><a href="roomavailability.html">Room Availability</a></li>
+				<li><a href="parking.html">Parking</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="map.html">Map</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container-library">
+	    <section class="full-width-section-library">
+	        <div class="title-books">
+	            <h1>Library Visitor Trends</h1>
+				<br>
+				<br>
+				<br>
+	        </div>
+	        <div style="width: 800px; margin: auto;">
+	            <canvas id="visitorsChart"></canvas>
+	        </div>
+	    </section>
+	</div>
+
+<script src="js/library.js"></script>
+</body>
+
+</html>
