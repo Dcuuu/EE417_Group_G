@@ -37,4 +37,10 @@ public class AccessLogsService {
             return false;
         }
     }
+    
+    // Retrieve an access logs record by ID
+    public AccessLogs getAccessLogsById(int id) {
+    	return accessLogsRepository.findById(id).orElse(null);
+    }
+
 }

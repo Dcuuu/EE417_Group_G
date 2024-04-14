@@ -25,6 +25,7 @@ function handleLoginFormSubmission(formId, redirectUrl) {
         })
         .then(data => {
             if (data.success) {
+				setLoggedInStatus(true);
                 window.location.href = redirectUrl;
             } else {
                 alert('Invalid login credentials.');

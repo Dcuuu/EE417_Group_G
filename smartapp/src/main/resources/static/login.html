@@ -41,8 +41,8 @@
                 <h2>Login</h2>
 
 					<form id="login-form">
-					    <input type="text" id="username" name="username" placeholder="Username" autocomplete="username" required>
-					    <input type="password" id="password" name="password" placeholder="Password" autocomplete="current-password" required>
+					    <input type="text" id="login-username" name="username" placeholder="Username" autocomplete="username" required>
+					    <input type="password" id="login-password" name="password" placeholder="Password" autocomplete="current-password" required>
 					    <button type="submit">Login</button>
 					    <button type="button" onclick="showRegister()">Register</button>
 					</form>
@@ -50,17 +50,17 @@
             </div>
             <div class="register-box" id="register-box" style="display:none;">
                 <h2>Register</h2>
-                <form id="register-form">
-                    <!-- Form fields -->
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="address" placeholder="Adress" required>
-                    <input type="phone_number" placeholder="Phone Number" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" required>
-                    <input type="password" placeholder="Repeat Password" required>
-                    <button type="submit">Register</button>
-                    <button type="button" onclick="showLogin()">Back to Login</button>
-                </form>
+			    <form id="register-form">
+			        <!-- Form fields -->
+			        <input type="text" id="register-username" placeholder="Username" required>
+			        <input type="text" id="register-address" placeholder="Address" required>
+			        <input type="text" id="register-phone-number" placeholder="Phone Number" required>
+			        <input type="email" id="register-email" placeholder="Email" required>
+			        <input type="password" id="register-password" placeholder="Password" required>
+			        <input type="password" id="register-repeat-password" placeholder="Repeat Password" required>
+			        <button type="submit">Register</button>
+			        <button type="button" onclick="showLogin()">Back to Login</button>
+			    </form>
             </div>
             <form action="admin.html">
                 <button type="submit">Staff login page</button>
@@ -72,6 +72,7 @@
 </div>
 
 <script src="js/log_reg.js"></script>
+<script src="js/session.js"></script>
 
 
 </body>

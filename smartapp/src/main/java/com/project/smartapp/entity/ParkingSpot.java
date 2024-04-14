@@ -20,6 +20,27 @@ public class ParkingSpot {
     private String location;
     private String status;
     private Timestamp lastUpdated;
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public Timestamp getLastUpdated() {
+		return lastUpdated;
+	}
+	public void setLastUpdated(Timestamp lastUpdated) {
+		this.lastUpdated = lastUpdated;
+	}
+	public void setSpotId(int id) {
+		this.spotId = id;
+	}
 
     // Constructor, getters, and setters generated from @Data
     

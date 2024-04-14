@@ -3,6 +3,8 @@ package com.project.smartapp.entity;
 import java.sql.Date;
 import java.sql.Time;
 
+import com.project.smartapp.dto.ClassroomDTO;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,6 +29,39 @@ public class ClassroomOccupancy {
     private Date date;
     private Time time;
     private boolean occupied;
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	public Time getTime() {
+		return time;
+	}
+	public void setTime(Time time) {
+		this.time = time;
+	}
+	public boolean isOccupied() {
+		return occupied;
+	}
+	public void setOccupied(boolean occupied) {
+		this.occupied = occupied;
+	}
+	public void setOccupancyId(int id) {
+	    this.occupancyId = id;
+	}
+	public int getOccupancyId() {
+	    return this.occupancyId;
+	}
+	public ClassroomDTO getClassroom() {
+	    ClassroomDTO classroomDTO = new ClassroomDTO();
+	    classroomDTO.setClassroomId(this.classroom.getClassroomId());
+	    return classroomDTO;
+	}
+	public void setClassroom(Classroom classroom) {
+		this.classroom = classroom;
+	}
+
 
     // Constructor, getters, and setters generated from @Data
     

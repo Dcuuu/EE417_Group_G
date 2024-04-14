@@ -56,4 +56,21 @@ public class AdminUsersController {
             return ResponseEntity.notFound().build();
         }
     }
+    
+    // Endpoint for registering a new non-admin user.
+    @PostMapping("/register")
+    public ResponseEntity<?> registerAdminUser(@RequestBody AdminUsers newUser) {
+        AdminUsers existingUser = adminUsersService.findByUsername(newUser.getUsername());
+        if (existingUser != null) {
+            String errorMessage = "User already exists";
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("success", false, "message", errorMessage));
+        }
+
+    	newUser.setRole("user");
+        adminUsersService.addAdminUsers(newUser);
+        return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("success", true, "message", "User registered successfully"));
+    }
+
+
+   
 }

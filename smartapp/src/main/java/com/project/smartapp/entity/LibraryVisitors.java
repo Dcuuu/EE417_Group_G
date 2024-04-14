@@ -21,6 +21,21 @@ public class LibraryVisitors {
 
     private Date date;
     private int currentCount;
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	public int getCurrentCount() {
+		return currentCount;
+	}
+	public void setCurrentCount(int currentCount) {
+		this.currentCount = currentCount;
+	}
+	public void setLibraryId(int id) {
+		this.libraryId = id;
+	}
 
     // Constructor, getters, and setters generated from @Data
     

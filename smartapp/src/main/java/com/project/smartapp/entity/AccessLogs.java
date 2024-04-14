@@ -25,9 +25,27 @@ public class AccessLogs {
 
     private String action;
     private Time timestamp;
+	public String getAction() {
+		return action;
+	}
+	public void setAction(String action) {
+		this.action = action;
+	}
+	public Time getTimestamp() {
+		return timestamp;
+	}
+	public void setTimestamp(Time timestamp) {
+		this.timestamp = timestamp;
+	}
+	public AdminUsers getAdminUsers() {
+	    return adminUsers;
+	}
+	public void setAdminUsers(AdminUsers adminUsers) {
+	    this.adminUsers = adminUsers;
+	}
 
-    // Constructor, getters, and setters generated from @Data
-    
+
+    // Constructor, getters, and setters generated from @Data 
     // Connects to the appropriate table in the database
     // and uses matching variables
 }
